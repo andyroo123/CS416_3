@@ -2,7 +2,7 @@
 <html>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <body>
-       <h1>hello world 3</h1>
+       <h1>hello world 2</h1>
        <div id="content"></div>
        <svg width="960" height="500"></svg>
 </body>
@@ -10,7 +10,7 @@
     d3.csv("data/city_temperature_short.csv", function(data) {
         data.forEach(element => {
             d3.select("body").append("p")
-            .text(element["Country"]);
+            .text(element["Country"] + " jere");
         });
     });
 </script>
